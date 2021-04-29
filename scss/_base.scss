@@ -1,0 +1,39 @@
+$color-dark: #262626;
+$color-black: #000;
+$color-primary: #fdde8a;
+$color-sec: white;
+
+$font-Orelega: 'Orelega One', cursive;
+$font-Poppins:'Poppins', sans-serif;
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin centering($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate( -50%, -50%);
+}
+@mixin textStyle($fontWeight: 700, $transform: uppercase) {
+  font-weight: $fontWeight;
+  letter-spacing: 2px;
+  text-transform: $transform;
+}
+
+%fullSpace {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  // outline:  1px solid red;
+}
+body {
+  background-color: $color-dark;
+}
+
